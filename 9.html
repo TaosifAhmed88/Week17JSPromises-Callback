@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+    <h1>Go To Console And Check It</h1>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/posts/123456789')
+            .then((Response) => {
+                if(!Response.ok){
+                    throw new Error('Network Declined Your Response')
+                }
+                return Response.json();
+            })
+    </script>
+</body>
+</html>
